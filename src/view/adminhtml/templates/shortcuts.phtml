@@ -1,0 +1,17 @@
+<?php
+/**
+ * @var $block \Brabs\AdminShortcuts\Block\Adminhtml\Shortcuts
+ */
+?>
+
+<div class="admin-shortcuts-container" data-bind="scope: 'admin-shortcuts-container'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": <?php echo $block->getJsLayout();?>
+        }
+    }
+</script>

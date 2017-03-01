@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer">
+            <block class="Brabs\AdminShortcuts\Block\Adminhtml\Shortcuts" name="brabs.admin.shortcuts"
+                   template="Brabs_AdminShortcuts::shortcuts.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="admin-shortcuts-container" xsi:type="array">
+                                <item name="component" xsi:type="string">Brabs_AdminShortcuts/js/view/adminshortcuts</item>
+                                <item name="config" xsi:type="array">
+                                    <item name="template" xsi:type="string">Brabs_AdminShortcuts/adminshortcuts</item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
